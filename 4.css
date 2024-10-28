@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+header {
+    background-color:#005666; /* Dark Blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600; /* Orange on hover */
+}
+
+#hero {
+    background-color: #ff6600; /* Orange */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px; /* Adjusted for better responsiveness */
+}
+
+.cta-button {
+    background-color: #003366; /* Dark Blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #002244; /* Darker Blue on hover */
+}
+
+#services {
+    padding: 40px 20px; /* Adjusted for better responsiveness */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px; /* Added gap for spacing */
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 30%; /* Flexible basis for responsive design */
+    margin: 15px;
+    text-align: center;
+    padding: 20px; /* Adjusted padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#about,
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #003366; /* Dark Blue */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #services {
+        padding: 40px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .service-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px 0; /* Margin adjustment for vertical stacking */
+    }
+}
